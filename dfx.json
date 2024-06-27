@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "dzieen2_backend": {
+      "candid": "src/dzieen2_backend/dzieen2_backend.did",
+      "package": "dzieen2_backend",
+      "type": "rust"
+    },
+    "dzieen2_frontend": {
+      "dependencies": [
+        "dzieen2_backend"
+      ],
+      "source": [
+        "src/dzieen2_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "dzieen2_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
